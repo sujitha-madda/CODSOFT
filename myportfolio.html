@@ -1,0 +1,211 @@
+<!DOCTYPE html>
+<html>
+    <head> 
+        <title> My Portfolio </title>
+        <style>
+            body{
+                font-family:'Times New Roman', Times, serif;
+                margin: 0;
+                padding: 0;
+            }
+            header{
+                background-color: cornflowerblue;
+                color: white;
+                text-align: center;
+                padding: 1em 0;
+            }
+            section{
+                margin: 2em 0;
+                padding: 0 1em;
+            }
+            img{
+                max-width: 500%;
+                height: 20%;
+            }
+            .projects{
+                margin-bottom: 1em;
+            }
+            footer{
+                background-color: rgb(88, 128, 214);
+                color: white;
+                text-align: center;
+                padding: 0.1em 0;
+                position: fixed;
+                bottom: 0;
+                width: 100%;
+            }
+            header nav{
+                text-align:center;
+                background-color: rgb(126, 195, 241);
+            }
+            header nav ul{
+                list-style-type: none;
+                margin: 0;
+                padding: 0;
+            }
+            header nav ul li{
+                display: inline-block;
+                margin: 0 10px;
+            }
+            header nav ul li a{
+                color: rgb(70, 129, 145);
+                text-decoration: none;
+                padding: 10px 15px;
+                display: inline-block;
+                transition: background-color 0.3s;
+            }
+            header nav ul li a :hover{
+                background-color:rgb(88, 128, 214);
+            }
+            #skills{
+                display: flex;
+                flex-wrap: wrap;
+            }
+            #skills h3{
+                flex: 1 0 100%;
+                text-align: left;
+                margin-top: 20px;
+            }
+            #skilla ul{
+                flex: 1;
+                margin: 0;
+                padding: 0;
+                list-style-type: none;
+                text-align: left;
+            }
+            #skills ul li{
+                margin-bottom: 10px;
+                background-color: rgb(119, 167, 196);
+                padding: 5px 10px;
+                border-radius: 5px;
+                display: inline-block;
+                margin-right: 10px;
+            }
+            #about{
+                clear: both;
+                overflow: hidden;
+            }
+            .avatar{
+                float: left;
+                width: 100px;
+                height: 100px;
+                border-radius: 50%;
+                border: 2px solid #333;
+                margin-right: 20px;
+            }
+            .bio{
+                flex:1;
+            }
+            #projects{
+                display: flex;
+                flex-wrap: wrap;
+                justify-content: space-between;
+            }
+            h2{
+                color: rgb(25, 67, 99);
+            }
+            h3{
+                color:rgb(89, 122, 143);
+            }
+        </style>
+    </head>
+    <body>
+        <header> 
+            <nav>
+                <ul>
+                    <li><a href="#about"> About </a></li>
+                    <li><a href="#skills"> Skills </a></li>
+                    <li><a href="#projects"> Project </a></li>
+                    <li><a href="#resume"> Resume </a></li>
+                    <li><a href="#contact"> Contact </a></li>
+                </ul>
+            </nav>
+            <h1>SUJITHA M </h1>
+            <p> To cultivate professional advancement through continuous learning and adaptive 
+                responsiveness to evolving circumstances.</p>
+        </header>
+        <section id="about">
+            <div class="container">
+            <img src="C:\Users\msuji\Downloads\Snapchat-101386575 (1).jpg" alt="Sujitha M" class="avatar">
+            <div class="bio">
+            <p style="font-size: 20px"> Hey there, Myself Sujitha and I am pursuing my degree in SRM University AP and have skills of active learning, communication, Team work and leadership.
+                 I also have knowledgs in html,css,javascript, data structures and algorithms and programming languauges like c,c++ and java script.
+                 Outside of coding, I enjoy watercolor painting, photography,blogging and exploring new technologies. 
+                 I believe in continuous learning and strive to improve my skills every day.</p>
+            </div>
+            </div>
+        </section>
+        <section id="skills">
+            <h2> Skills </h2>
+            <h3> Web development </h3>
+            <ul>
+                <li> HTML </li>
+                <li> CSS </li>
+                <li> JavaScript </li>
+            </ul>
+            <h3> Programming Languages</h3>
+            <ul>
+                <li> C</li>
+                <li> C++</li>
+                <li> Python</li>
+            </ul>
+            <h3>Concepts</h3>
+            <ul>
+                <li> Data Structures and ALgorithms </li>
+                <li> Problem Solving</li>
+            </ul>
+        </section>
+        <section id="Projects">
+            <h2> Projects </h2>
+                <div class="container" style="overflow:hidden;">
+                <h3> TO-DO LIST </h3>
+                <img src="C:\Users\msuji\Downloads\todo.jpg" alt="to-do list" class="right-image" style="float:right; margin-left:50px;margin-right:50px; width:400px;height:200px;">
+                <p> This C program project implements a simple task scheduler or planner using linked list data structure that
+                    allows users to interact with a list of tasks. The program represents a task with a description,
+                    completion status.Demonstrate the use of linked list data structure to manage a collection of tasks.
+                    Develop functions to add tasks to the task list, display the current list of tasks, and
+                    mark tasks as completed.
+                    Implement error handling, such as checking for successful memory allocation, and
+                    provide informative error messages to the user.
+                    Capture user input for adding tasks, displaying tasks, marking tasks as completed and
+                    exiting the program.</p>
+                </div>
+            <div class="container" style="overflow:hidden;">
+                <h3> SNAKE GAME </h3>
+                <img src="C:\Users\msuji\Downloads\snake-game3.jpg" alt="snakegame" class="right-image" style="float:right; margin-left:50px;margin-right:50px; width:400px;height:200px;">
+                <p> To create a simple Snake game using arrays in C++.Snake can move in a given direction and when it eats the food, the length of snake increases. 
+                    When the snake crosses itself, the game will be over. 
+                    Food will be generated at a given interval.Snake is a classic game that includes a growing line represented as a snake that can consume items, change direction, and grow in length. As the snake grows larger in length, the difficulty of the game grows. In this article, we will create a snake game using a C++ program.</p>
+            </div>
+            <div class="container" style="overflow:hidden;">
+                <h3> SUDOKU SOLVER </h3>
+                <img src="C:\Users\msuji\Downloads\0_OO2sQmi6Grt5mjDw.png" alt="sudoku solver" class="right-image" style="float:right; margin-left:50px;margin-right:50px; width:400px;height:200px;">
+                <p> To create a simple sudoku solver using backtracking technique in C++. Given a partially filled 9×9 2D array ‘grid[9][9]’, the goal is to assign digits (from 1 to 9) to the empty cells so that every row, column, and subgrid of size 3×3 contains exactly one instance of the digits from 1 to 9. 
+                    Sudoku can be solved by assigning numbers one by one to empty cells. Before assigning a number, check whether it is safe to assign. 
+                    Check that the same number is not present in the current row, current column and current 3X3 subgrid. After checking for safety, assign the number, and recursively check whether this assignment leads to a solution or not.
+                </p>
+            </div>
+            <div class="container" style="overflow:hidden;">
+                <h3> COOK BOOK </h3>
+                <img src="C:\Users\msuji\Downloads\cover.jpg" alt="cookbook" class="right-image" style="float:right; margin-left:50px;margin-right:50px; width:400px;height:200px;">
+                <p> To create a simple cookbook website using html and css. The content is wrapped in html, head, and body tags, adhering to the basic structure of an HTML document.
+                    Some styles are applied internally within the style tag in the 'head' 'section'.
+                    Styles are also applied directly to elements using the 'style' attribute.
+                    Classes are used to apply styles to multiple elements. For example, the heading class is applied to the div containing the heading.
+                    Used to divide the content into sections for styling and layout purposes.
+                </p>
+            </div>
+        </section>
+        <section id="resume">
+            <h2> Resume </h2>
+            <p> <a href =""C:\Users\msuji\OneDrive\Documents\sujitha_resume.docx" " target="_blank">See my Resume</a> </p>
+        </section>
+        <section id = "contact">
+            <h2> Contact</h2>
+            <p> Email: msujitha1703@gmail.com </p>
+        </section>
+        <footer>
+            <p> &copy; SUJITHA M</p>
+        </footer>
+    </body>
+</html>
